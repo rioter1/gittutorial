@@ -7,12 +7,14 @@ git commit -m "first commit"
 git branch -M main  
 git remote add origin https://github.com/rioter1/gittutorial.git  
 git push -u origin main  
+
+# If abobve does not work, you may need to try some of the below steps
 # add username "uname"  
 # add password/token "token"  
 # you will get an error when using persoanl access token as it is ssh based  
 # to go around that error, open .git/config, replace origin https with ssh  
 # this will fix the error with PAT, now you will get a perission erro while pushing Permission denied (publickey)  
-# git pull --rebase will NOt work to resolve this error  
+# git pull --rebase will NOT work to resolve this error  
 ls -al ~/.ssh # checks to see if existing ssh keys are present  
 # copy the existing ssh key to clipboard  
 cat ~/.ssh/id_ed25519.pub  
