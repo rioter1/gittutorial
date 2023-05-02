@@ -7,8 +7,8 @@ git commit -m "first commit"
 git branch -M main  
 git remote add origin https://github.com/rioter1/gittutorial.git  
 git push -u origin main  
-username "uname"  
-password/token "token"  
+# add username "uname"  
+# add password/token "token"  
 # you will get an error when using persoanl access token as it is ssh based  
 # to go around that error, open .git/config, replace origin https with ssh  
 # this will fix the error with PAT, now you will get a perission erro while pushing Permission denied (publickey)  
