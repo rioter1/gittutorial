@@ -1,7 +1,7 @@
 touch README.md  
 git init  
-git config --global user.name "rioter1"  
-git config --global user.email prateek.gsharma@gmail.com  
+git config --global user.name "uname"  
+git config --global user.email "email"  
 git add README.md  
 git commit -m "first commit"  
 git branch -M main  
