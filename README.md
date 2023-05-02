@@ -51,7 +51,8 @@ git checkout newname # switches branch to new branch
 git checkout main  
 # then merge
 git merge newname  
-
+# If you do not do a MERGE, your repository will NOT pick any new changes, merging is essential
+# once u merge, u can push the changes
 
 
 
