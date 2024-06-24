@@ -6,6 +6,7 @@ git add README.md
 git commit -m "first commit"  
 git branch -M main  
 git remote add origin https://github.com/rioter1/gittutorial.git  
+git remote set-url origin git@github.com:uname/repository.git  
 git push -u origin main  
 
 # add username "uname"  
