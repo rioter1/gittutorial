@@ -65,38 +65,65 @@ git push -u origin newbranch
 
 # make 2 folders, clone the same repository in both the folders 
 # both developers would need to checkout with a new branch to do any work
-
+```
 git checkout developera  
-
-# make changes
-# commit changes
+```
+make changes
+commit changes
+```
 git add .  
 git commit -m ""  
-
+```
 #checkout to main
+```
 git checkout main  
-
+```
 #now developer B has also strted their own story
-
+```
 git branch developerb  
 git checkout developerb
-
+```
 # make changes
+```
  git add .  
  git commit -m ""  
+```
  
 # switch back to the main branch
+```
 git checkout main  
 merge with the main branch  
 git merge developerb  
+```
 
-# ABOVE will caluse an ERROR as developerA has pushed some changes to the main branch '
-# The changes done by developerA has to be integrated into your work for the error to not happen (ALL is assumed to be happening in THE SAME FILE)
+ABOVE will caluse an ERROR as developerA has pushed some changes to the main branch '
+The changes done by developerA has to be integrated into your work for the error to not happen (ALL is assumed to be happening in THE SAME FILE)
+the conflict has to be resolved manually by going in the file and observing changes made by both A and B and than commiting
 
-# the conflict has to be resolved manually by going in the file and observing changes made by both A and B and than commiting
+# DEALING with Large files and git-lfs
 
+```
+sudo apt-get install git-lfs
+git lfs install
+```
 
+Track the files
+```
+git lfs track "*.mp4"
+git lfs track "*.mkv"
+```
 
+# In case you upload wrong files or have to remove the files
+
+```
+git reset HEAD <large-file1> <large-file2>
+git rm --cached <large-file1> <large-file2>
+
+pip3 install git-filter-repo
+git filter-repo --strip-blobs-bigger-than 50M
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+```
 
 
 
